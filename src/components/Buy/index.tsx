@@ -1,18 +1,24 @@
-import { ShoppingCartSimple } from 'phosphor-react'
+import { Minus, Plus, ShoppingCartSimple } from 'phosphor-react'
 import { BuyContainer } from './styles'
 
 export function Buy() {
   return (
     <BuyContainer>
       <p>
-        <span>R$</span>9,90
+        R$<span>9,90</span>
       </p>
       <div>
         <label>
-          <input type="number" min={1} aria-label="Quantidade" />
+          <span>
+            <Minus size={14} color="#8047F8" weight="bold" />
+          </span>
+          <input type="number" min={1} max={100} aria-label="Quantidade" />
+          <span>
+            <Plus size={14} color="#8047F8" weight="bold" />
+          </span>
         </label>
         <button type="submit">
-          <ShoppingCartSimple size={22} color="#8047f8" weight="fill" />
+          <ShoppingCartSimple size={22} color="#F3F2F2" weight="fill" />
         </button>
       </div>
     </BuyContainer>

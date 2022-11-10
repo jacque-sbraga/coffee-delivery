@@ -28,18 +28,15 @@ export const CardContainer = styled.li`
     line-height: 1.82rem;
   }
 `
-
 export const TagsContainer = styled.div`
   display: flex;
   gap: 0.4rem;
   margin: 1.2rem 0 0 0;
   span {
-    margin-top: 1.2rem;
     text-transform: uppercase;
     font-size: 1rem;
     font-weight: 700;
     color: ${(props) => props.theme['yellow-800']};
-    margin-top: 1.2rem;
     background-color: ${(props) => props.theme['yellow-100']};
     padding: 0.4rem 0.8rem;
     border-radius: 100px;
